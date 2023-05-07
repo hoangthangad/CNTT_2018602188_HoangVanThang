@@ -8,6 +8,7 @@ using PagedList;
 using System.Globalization;
 using System.Data.Entity;
 using HoangVanThang2018602188.Models.ViewModels;
+using HoangVanThang2018602188.Models.EF;
 
 namespace HoangVanThang2018602188.Areas.Admin.Controllers
 {
@@ -17,19 +18,24 @@ namespace HoangVanThang2018602188.Areas.Admin.Controllers
 
         private ApplicationDbContext db = new ApplicationDbContext();
         // GET: Admin/Order
-        public ActionResult Index(int? page)
+        public ActionResult Index(string Searchtext, int? page)
         {
-            var items = db.Orders.OrderByDescending(x => x.CreatedDate).ToList();
-
+            //var items = db.Orders.OrderByDescending(x => x.CreatedDate).ToList();
+            IEnumerable<Order> items = db.Orders.OrderByDescending(x => x.CreatedDate);
             if (page == null)
             {
                 page = 1;
             }
-            var pageNumber = page ?? 1;
             var pageSize = 10;
+            if (!string.IsNullOrEmpty(Searchtext))
+            {
+                items = items.Where(x => x.Code.Contains(Searchtext) || x.CustomerName.Contains(Searchtext));
+            }
+            var pageIndex = page.HasValue ? Convert.ToInt32(page) : 1;
+            items = items.ToPagedList(pageIndex, pageSize);
             ViewBag.PageSize = pageSize;
-            ViewBag.Page = pageNumber;
-            return View(items.ToPagedList(pageNumber, pageSize));
+            ViewBag.Page = page;
+            return View(items);
         }
 
       

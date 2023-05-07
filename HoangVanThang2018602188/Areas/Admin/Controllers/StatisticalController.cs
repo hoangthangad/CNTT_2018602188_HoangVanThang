@@ -26,6 +26,7 @@ namespace HoangVanThang2018602188.Areas.Admin.Controllers
                         on o.Id equals od.OrderId
                         join p in db.Products
                         on od.ProductId equals p.Id
+                        where o.Status == 2 || o.Status == 3
                         select new
                         {
                             CreatedDate = o.CreatedDate,
@@ -48,7 +49,7 @@ namespace HoangVanThang2018602188.Areas.Admin.Controllers
             {
                 Date = x.Key.Value,
                 TotalBuy = x.Sum(y => y.Quantity * y.OriginalPrice),
-                TotalSell = x.Sum(y => y.Quantity * y.Price),
+                TotalSell = x.Sum(y => y.Quantity * y.Price)
             }).Select(x => new
             {
                 Date = x.Date,

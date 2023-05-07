@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Thống kê";
 }
 
@@ -27,15 +26,25 @@
     <div class="card">
         <div class="card-header">
             <h3 class="card-title">Thống kê danh thu</h3>
-
+            @*<div>
+                    <h3 class="card-title">Thống kê danh thu</h3>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Từ ngày</label>
+                    <input type="datetime-local" data-id="txtFromDate" />
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Đến ngày</label>
+                    <input type="datetime" data-id="txtToDate" />
+                </div>*@
             @*<div class="card-tools">
-                <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
-                    <i class="fas fa-minus"></i>
-                </button>
-                <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>*@
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                        <i class="fas fa-minus"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>*@
         </div>
         <div class="card-body">
             <div class="row">
@@ -61,7 +70,7 @@
         </div>
         <!-- /.card-body -->
         <div class="card-footer">
-           
+
         </div>
         <!-- /.card-footer-->
     </div>
@@ -154,10 +163,10 @@
             $.each(data, function (i, item) {
                 var strDate = moment(item.Date).format('DD/MM/yyyy');
                 strHtml += "<tr>";
-                strHtml += "<td>"+(i+1)+"</td>";
-                strHtml += "<td>" + strDate+"</td>";
-                strHtml += "<td>"+item.DoanhThu+"</td>";
-                strHtml += "<td>"+item.LoiNhuan+"</td>";
+                strHtml += "<td>" + (i + 1) + "</td>";
+                strHtml += "<td>" + strDate + "</td>";
+                strHtml += "<td>" + item.DoanhThu + "</td>";
+                strHtml += "<td>" + item.LoiNhuan + "</td>";
                 strHtml += "</tr>";
             });
             $('#load_data').html(strHtml);

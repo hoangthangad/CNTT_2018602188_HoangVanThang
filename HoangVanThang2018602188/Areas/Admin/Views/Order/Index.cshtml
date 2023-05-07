@@ -1,5 +1,6 @@
-﻿@model PagedList.IPagedList<HoangVanThang2018602188.Models.EF.Order>
+﻿@model PagedList.PagedList<HoangVanThang2018602188.Models.EF.Order>
 @using PagedList.Mvc;
+@using PagedList;
 @{
     ViewBag.Title = "Danh sách đơn hàng";
 }
@@ -44,6 +45,20 @@
             <h3 class="card-title">Quản lý đơn hàng</h3>
         </div>
         <div class="card-body">
+            <div class="row">
+                <div class="col-6 mb-2">
+                    @using (Html.BeginForm("index", "order", FormMethod.Get, new { }))
+                    {
+                        <div class="input-group input-group-sm">
+                            @Html.TextBox("Searchtext", null, new { @class = "form-control" })
+                            @*<input type="text" name="searchtext" class="form-control">*@
+                            <span class="input-group-append">
+                                <button type="submit" class="btn btn-info btn-flat">Tìm kiếm</button>
+                            </span>
+                        </div>
+                    }
+                </div>
+            </div>
             <table class="table table-bordered">
                 <thead>
                     <tr>
