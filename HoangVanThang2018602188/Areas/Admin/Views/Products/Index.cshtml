@@ -18,7 +18,7 @@
             <a href="/admin/home" class="nav-link">Trang chủ</a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
-            <a href="/admin/products" class="nav-link">@ViewBag.Title</a>
+            <a href="#" class="nav-link">@ViewBag.Title</a>
         </li>
     </ul>
 }
@@ -32,7 +32,7 @@
             </div>
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
-                    <li class="breadcrumb-item"><a href="/admin/home">Home</a></li>
+                    <li class="breadcrumb-item"><a href="/admin/home">Trang chủ</a></li>
                     <li class="breadcrumb-item active">@ViewBag.Title</li>
                 </ol>
             </div>
@@ -46,7 +46,7 @@
     <!-- Default box -->
     <div class="card">
         <div class="card-header">
-            <h3 class="card-title">Danh sách @ViewBag.Title</h3>
+            <h3 class="card-title">@ViewBag.Title</h3>
 
             <div class="card-tools">
                 <a href="/admin/products/add" class="btn btn-primary">Thêm mới</a>
@@ -70,7 +70,7 @@
             </div>
             <table class="table table-hover">
                 <thead>
-                    <tr>
+                    <tr class="text-center">
                         <th><input type="checkbox" id="SelectAll" /></th>
                         <th>STT</th>
                         <th>Hình ảnh</th>
@@ -82,9 +82,10 @@
                         <th>Home</th>
                         <th>Sale</th>
                         <th>Hot</th>
-                        <th>Hiển thị</th>
+                        <th>Active</th>
+                        <th>Feature</th>
 
-                        <th style="width:150px;"></th>
+                        <th style="width:150px;">Thao tác</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -96,13 +97,15 @@
                             var strCheck = item.IsActive ? "<i class='fa fa-check text-success'></i>" : "<i class='fas fa-times text-danger'></i>";
                             var strCheckHome = item.IsHome ? "<i class='fa fa-check text-success'></i>" : "<i class='fas fa-times text-danger'></i>";
                             var strCheckSale = item.IsSale ? "<i class='fa fa-check text-success'></i>" : "<i class='fas fa-times text-danger'></i>";
+                            var strCheckHot = item.IsHot ? "<i class='fa fa-check text-success'></i>" : "<i class='fas fa-times text-danger'></i>";
+                            var strCheckFeature = item.IsFeature ? "<i class='fa fa-check text-success'></i>" : "<i class='fas fa-times text-danger'></i>";
                             var strImg = "";
                             var CheckImage = item.ProductImage.FirstOrDefault(x => x.IsDefault);
                             if (CheckImage != null)
                             {
                                 strImg = CheckImage.Image;
                             }
-                    <tr id="trow_@item.Id">
+                    <tr id="trow_@item.Id" class="text-center">
                         <td><input type="checkbox" class="cbkItem" value="@item.Id" /></td>
                         <td>@i</td>
                         <td><img class="imgproduct" data-id="@item.Id" src="@strImg" width="50" /></td>
@@ -118,13 +121,13 @@
                             <a href='#' data-id="@item.Id" class="btnSale">@Html.Raw(strCheckSale)</a>
                         </td>
                         <td class="text-center">
-                            <a href='#' data-id="@item.Id" class="btnHot">@Html.Raw(strCheckSale)</a>
+                            <a href='#' data-id="@item.Id" class="btnHot">@Html.Raw(strCheckHot)</a>
                         </td>
                         <td class="text-center">
                             <a href='#' data-id="@item.Id" class="btnActive">@Html.Raw(strCheck)</a>
                         </td>
                         <td class="text-center">
-                            <a href='#' data-id="@item.Id" class="btnFeature">@Html.Raw(strCheckSale)</a>
+                            <a href='#' data-id="@item.Id" class="btnFeature">@Html.Raw(strCheckFeature)</a>
                         </td>
                         <td>
                             <a href="/admin/Products/edit/@item.Id" class="btn btn-sm btn-primary">Sửa</a>

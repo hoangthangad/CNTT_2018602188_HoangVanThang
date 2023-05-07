@@ -53,8 +53,8 @@ namespace HoangVanThang2018602188.Areas.Admin.Controllers
             if (item != null)
             {
                 db.Orders.Attach(item);
-                item.TypePayment = trangthai;
-                db.Entry(item).Property(x => x.TypePayment).IsModified = true;
+                item.Status = trangthai;
+                db.Entry(item).Property(x => x.Status).IsModified = true;
                 db.SaveChanges();
                 return Json(new { message = "Success", Success = true });
             }
@@ -66,7 +66,7 @@ namespace HoangVanThang2018602188.Areas.Admin.Controllers
             var query = from o in db.Orders
                         join od in db.OrderDetails on o.Id equals od.OrderId
                         join p in db.Products
-on od.ProductId equals p.Id
+                        on od.ProductId equals p.Id
                         select new
                         {
                             CreatedDate = o.CreatedDate,

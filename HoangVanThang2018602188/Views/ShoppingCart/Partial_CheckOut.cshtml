@@ -12,7 +12,7 @@
     <script>
         function OnBeginCO() {
             $('#btnCheckOut').attr("disabled", "disabled");
-            $('#load_send').html('<h2>Đang gửi....</h2>');
+            $('#load_send').html('<p>Đang gửi....</p>');
         }
         function OnSuccessCO(res) {
             if (res.Success) {
@@ -32,19 +32,19 @@
     <h3>Thông tin khách hàng</h3>
     <div class="form-group">
         <label>Họ tên khách hàng</label>
-        <input type="text" name="CustomerName" required class="form-control" autocomplete="off" />
+        <input type="text" name="CustomerName" required class="form-control" autocomplete="on" />
     </div>
     <div class="form-group">
         <label>Số điện thoại</label>
-        <input type="text" name="Phone" class="form-control" autocomplete="off" />
+        <input type="text" name="Phone" class="form-control" autocomplete="on" />
     </div>
     <div class="form-group">
         <label>Địa chỉ</label>
-        <input type="text" name="Address" class="form-control" autocomplete="off" />
+        <input type="text" name="Address" class="form-control" autocomplete="on" />
     </div>
     <div class="form-group">
         <label>Email</label>
-        <input type="text" name="Email" class="form-control" autocomplete="off" />
+        <input type="text" name="Email" class="form-control" autocomplete="on" />
     </div>
     <div class="form-group">
         <label>Hình thức thanh toán</label>

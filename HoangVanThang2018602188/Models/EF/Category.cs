@@ -36,5 +36,6 @@ namespace HoangVanThang2018602188.Models.EF
         public int Position { get; set; }
         public ICollection<News> News { get; set; }
         public ICollection<Posts> Posts { get; set; }
+        public ICollection<Contact> Contacts { get; set; }
     }
 }

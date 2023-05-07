@@ -187,7 +187,7 @@ namespace HoangVanThang2018602188.Controllers
                     contentCustomer = contentCustomer.Replace("{{DiaChiNhanHang}}", order.Address);
                     contentCustomer = contentCustomer.Replace("{{ThanhTien}}", HoangVanThang2018602188.Common.Common.FormatNumber(thanhtien, 0));
                     contentCustomer = contentCustomer.Replace("{{TongTien}}", HoangVanThang2018602188.Common.Common.FormatNumber(TongTien, 0));
-                    HoangVanThang2018602188.Common.Common.SendMail("ShopOnline", "Đơn hàng #" + order.Code, contentCustomer.ToString(), req.Email);
+                    HoangVanThang2018602188.Common.Common.SendMail("HOTA Clothes", "Đơn hàng #" + order.Code, contentCustomer.ToString(), req.Email);
 
                     string contentAdmin = System.IO.File.ReadAllText(Server.MapPath("~/Content/templates/send1.html"));
                     contentAdmin = contentAdmin.Replace("{{MaDon}}", order.Code);
@@ -199,7 +199,8 @@ namespace HoangVanThang2018602188.Controllers
                     contentAdmin = contentAdmin.Replace("{{DiaChiNhanHang}}", order.Address);
                     contentAdmin = contentAdmin.Replace("{{ThanhTien}}", HoangVanThang2018602188.Common.Common.FormatNumber(thanhtien, 0));
                     contentAdmin = contentAdmin.Replace("{{TongTien}}", HoangVanThang2018602188.Common.Common.FormatNumber(TongTien, 0));
-                    HoangVanThang2018602188.Common.Common.SendMail("ShopOnline", "Đơn hàng mới #" + order.Code, contentAdmin.ToString(), ConfigurationManager.AppSettings["EmailAdmin"]);
+                    HoangVanThang2018602188.Common.Common.SendMail("HOTA Clothes", "Đơn hàng mới #" + order.Code, contentAdmin.ToString(), ConfigurationManager.AppSettings["EmailAdmin"]);
+                    var mailadm = ConfigurationManager.AppSettings["EmailAdmin"];
                     cart.ClearCart();
                     code = new { Success = true, Code = req.TypePayment, Url = "" };
                     //var url = "";

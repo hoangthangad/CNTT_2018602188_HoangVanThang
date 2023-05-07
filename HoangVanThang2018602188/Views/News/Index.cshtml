@@ -30,7 +30,7 @@
 <div class="container news_section_container">
     <div class="row">
         <div class="col-md-12">
-            <h1 class="title-news"> Tin tức</h1>
+            <h1 class="title-news">Tin tức</h1>
         </div>
     </div>
     @if (Model != null && Model.Any())
@@ -40,7 +40,7 @@
             <div class="row row-item-new">
                 <div class="col-md-3">
                     <div class="img-box">
-                        <a href="" title="@item.Title"><img src="@item.Image" alt="@item.Title" /></a>
+                        <a href="/@item.Alias-n@(item.Id)" title="@item.Title"><img src="@item.Image" alt="@item.Title" style="width:200px" /></a>
                     </div>
                 </div>
                 <div class="col-md-9">

@@ -44,7 +44,7 @@ namespace HoangVanThang2018602188
           );
             routes.MapRoute(
             name: "BaiViet",
-            url: "bai-dang/{alias}-p{id}",
+            url: "{alias}-n{id}",
             defaults: new { controller = "Posts", action = "Detail", alias = UrlParameter.Optional },
             namespaces: new[] { "HoangVanThang2018602188.Controllers" }
         );

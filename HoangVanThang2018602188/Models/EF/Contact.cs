@@ -28,5 +28,7 @@ namespace HoangVanThang2018602188.Models.EF
         [StringLength(4000)]
         public string Message { get; set; }
         public bool IsRead { get; set; }
+        public int CategoryId { get; set; }
+        public virtual Category Category { get; set; }
     }
 }

@@ -230,6 +230,10 @@
     <Compile Include="Migrations\202305021516085_UpdateImageTbContact.Designer.cs">
       <DependentUpon>202305021516085_UpdateImageTbContact.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202305051012592_UpdateTableContactAndCategory.cs" />
+    <Compile Include="Migrations\202305051012592_UpdateTableContactAndCategory.Designer.cs">
+      <DependentUpon>202305051012592_UpdateTableContactAndCategory.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\CommonAbstract.cs" />
@@ -3546,7 +3550,30 @@
     <Content Include="Scripts\jsShopping.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Uploads\images\244994762_2380031152133544_4984166604951804110_n.jpg" />
+    <Content Include="Uploads\images\news\prada-1f-logo.jpg" />
+    <Content Include="Uploads\images\sanpham\accessories\23-BTN-bag\1.jpg" />
+    <Content Include="Uploads\images\sanpham\accessories\23-BTN-bag\2.jpg" />
+    <Content Include="Uploads\images\sanpham\accessories\23-BTN-bag\3.jpg" />
+    <Content Include="Uploads\images\sanpham\accessories\23-Bucket-hat\1.jpg" />
+    <Content Include="Uploads\images\sanpham\accessories\23-Bucket-hat\2.jpg" />
+    <Content Include="Uploads\images\sanpham\accessories\23-Bucket-hat\3.jpg" />
+    <Content Include="Uploads\images\sanpham\accessories\23-Destroyed-cap\1.jpg" />
+    <Content Include="Uploads\images\sanpham\accessories\23-Destroyed-cap\2.jpg" />
+    <Content Include="Uploads\images\sanpham\accessories\23-Destroyed-cap\3.jpg" />
+    <Content Include="Uploads\images\sanpham\accessories\23-Shoulder-Bag-canvas-Men-size\1.png" />
+    <Content Include="Uploads\images\sanpham\accessories\23-Shoulder-Bag-canvas-Men-size\2.png" />
+    <Content Include="Uploads\images\sanpham\accessories\23-Shoulder-Bag-canvas-Men-size\3.png" />
+    <Content Include="Uploads\images\sanpham\accessories\23-strap-leather\1.png" />
+    <Content Include="Uploads\images\sanpham\accessories\23-strap-leather\2.png" />
+    <Content Include="Uploads\images\sanpham\accessories\23-strap-leather\3.png" />
+    <Content Include="Uploads\images\sanpham\accessories\23-Waxed-Cap\1.jpg" />
+    <Content Include="Uploads\images\sanpham\accessories\23-Waxed-Cap\2.jpg" />
+    <Content Include="Uploads\images\sanpham\accessories\23-Waxed-Cap\3.jpg" />
+    <Content Include="Uploads\images\sanpham\accessories\Canvas-Shoulder-Bag-Mini\1.jpg" />
+    <Content Include="Uploads\images\sanpham\accessories\Canvas-Shoulder-Bag-Mini\2.jpg" />
+    <Content Include="Uploads\images\sanpham\accessories\Canvas-Shoulder-Bag-Mini\3.png" />
     <Content Include="Uploads\images\sanpham\avt.jpg" />
+    <Content Include="Uploads\images\sanpham\avt_admin.jpg" />
     <Content Include="Uploads\images\sanpham\banner_1.jpg" />
     <Content Include="Uploads\images\sanpham\banner_2.jpg" />
     <Content Include="Uploads\images\sanpham\banner_3.jpg" />
@@ -3558,6 +3585,60 @@
     <Content Include="Uploads\images\sanpham\desc_1.jpg" />
     <Content Include="Uploads\images\sanpham\desc_2.jpg" />
     <Content Include="Uploads\images\sanpham\desc_3.jpg" />
+    <Content Include="Uploads\images\sanpham\Man\23-1l-trouser\1.jpg" />
+    <Content Include="Uploads\images\sanpham\Man\23-1l-trouser\2.jpg" />
+    <Content Include="Uploads\images\sanpham\Man\23-1l-trouser\3.jpg" />
+    <Content Include="Uploads\images\sanpham\Man\23-Big-Logo-smokecloud\1-black.jpg" />
+    <Content Include="Uploads\images\sanpham\Man\23-Big-Logo-smokecloud\1-white.png" />
+    <Content Include="Uploads\images\sanpham\Man\23-Big-Logo-smokecloud\2-black.jpg" />
+    <Content Include="Uploads\images\sanpham\Man\23-Big-Logo-smokecloud\2-white.png" />
+    <Content Include="Uploads\images\sanpham\Man\23-Big-Logo-smokecloud\3-black.jpg" />
+    <Content Include="Uploads\images\sanpham\Man\23-Big-Logo-smokecloud\3-white.png" />
+    <Content Include="Uploads\images\sanpham\Man\23-Big-Logo-smokecloud\4-black.jpg" />
+    <Content Include="Uploads\images\sanpham\Man\23-blanktee\black-1.jpg" />
+    <Content Include="Uploads\images\sanpham\Man\23-blanktee\black-2.jpg" />
+    <Content Include="Uploads\images\sanpham\Man\23-blanktee\black-3.jpg" />
+    <Content Include="Uploads\images\sanpham\Man\23-blanktee\white-1.jpg" />
+    <Content Include="Uploads\images\sanpham\Man\23-blanktee\white-2.jpg" />
+    <Content Include="Uploads\images\sanpham\Man\23-blanktee\white-3.jpg" />
+    <Content Include="Uploads\images\sanpham\Man\23-boxy-tee\1-white.jpg" />
+    <Content Include="Uploads\images\sanpham\Man\23-boxy-tee\2-white.jpg" />
+    <Content Include="Uploads\images\sanpham\Man\23-boxy-tee\3-white.jpg" />
+    <Content Include="Uploads\images\sanpham\Man\23-hidden-short\1.jpg" />
+    <Content Include="Uploads\images\sanpham\Man\23-hidden-short\2.jpg" />
+    <Content Include="Uploads\images\sanpham\Man\23-hidden-short\3.jpg" />
+    <Content Include="Uploads\images\sanpham\Man\23-human-tee\1.jpg" />
+    <Content Include="Uploads\images\sanpham\Man\23-human-tee\2.jpg" />
+    <Content Include="Uploads\images\sanpham\Man\23-human-tee\3.jpg" />
+    <Content Include="Uploads\images\sanpham\Man\23-human-tee\4.jpg" />
+    <Content Include="Uploads\images\sanpham\Man\23-human-tee\5.jpg" />
+    <Content Include="Uploads\images\sanpham\Man\23-Over-Tee\1.png" />
+    <Content Include="Uploads\images\sanpham\Man\23-Over-Tee\2.png" />
+    <Content Include="Uploads\images\sanpham\Man\23-Over-Tee\3.png" />
+    <Content Include="Uploads\images\sanpham\Man\23-paint-dark-grey-destroyed\1.jpg" />
+    <Content Include="Uploads\images\sanpham\Man\23-paint-dark-grey-destroyed\2.jpg" />
+    <Content Include="Uploads\images\sanpham\Man\23-paint-dark-grey-destroyed\3.jpg" />
+    <Content Include="Uploads\images\sanpham\Man\23-paint-dark-grey-destroyed\4.jpg" />
+    <Content Include="Uploads\images\sanpham\Man\23-QT-paint-original-black\1.jpg" />
+    <Content Include="Uploads\images\sanpham\Man\23-QT-paint-original-black\2.jpg" />
+    <Content Include="Uploads\images\sanpham\Man\23-QT-paint-original-black\3.jpg" />
+    <Content Include="Uploads\images\sanpham\Man\23-short-ml\1.jpg" />
+    <Content Include="Uploads\images\sanpham\Man\23-short-ml\2.jpg" />
+    <Content Include="Uploads\images\sanpham\Man\23-short-ml\3.jpg" />
+    <Content Include="Uploads\images\sanpham\Man\23-skinny-blackcode-04\1.jpg" />
+    <Content Include="Uploads\images\sanpham\Man\23-skinny-blackcode-04\2.jpg" />
+    <Content Include="Uploads\images\sanpham\Man\23-skinny-blackcode-04\3.jpg" />
+    <Content Include="Uploads\images\sanpham\Man\23-smoker-tee\1.jpg" />
+    <Content Include="Uploads\images\sanpham\Man\23-smoker-tee\2.jpg" />
+    <Content Include="Uploads\images\sanpham\Man\23-smoker-tee\3.jpg" />
+    <Content Include="Uploads\images\sanpham\Man\23-smoker-tee\4.jpg" />
+    <Content Include="Uploads\images\sanpham\Man\23-soundwave-small-logo\1-black.png" />
+    <Content Include="Uploads\images\sanpham\Man\23-soundwave-small-logo\1-white.png" />
+    <Content Include="Uploads\images\sanpham\Man\23-soundwave-small-logo\2-black.png" />
+    <Content Include="Uploads\images\sanpham\Man\23-soundwave-small-logo\2-white.png" />
+    <Content Include="Uploads\images\sanpham\Man\23-soundwave-small-logo\3-black.png" />
+    <Content Include="Uploads\images\sanpham\Man\23-soundwave-small-logo\3-white.png" />
+    <Content Include="Uploads\images\sanpham\Man\23-soundwave-small-logo\4-black.png" />
     <Content Include="Uploads\images\sanpham\map_marker.png" />
     <Content Include="Uploads\images\sanpham\product_1.png" />
     <Content Include="Uploads\images\sanpham\product_10.png" />
@@ -3576,6 +3657,33 @@
     <Content Include="Uploads\images\sanpham\single_3.jpg" />
     <Content Include="Uploads\images\sanpham\single_3_thumb.jpg" />
     <Content Include="Uploads\images\sanpham\slider_1.jpg" />
+    <Content Include="Uploads\images\sanpham\Women\23-BLACK-COCOON-TROUSER\1.jpg" />
+    <Content Include="Uploads\images\sanpham\Women\23-BLACK-COCOON-TROUSER\2.jpg" />
+    <Content Include="Uploads\images\sanpham\Women\23-BLACK-COCOON-TROUSER\3.jpg" />
+    <Content Include="Uploads\images\sanpham\Women\23-PLEATED-SKIRT\1.jpg" />
+    <Content Include="Uploads\images\sanpham\Women\23-PLEATED-SKIRT\2.jpg" />
+    <Content Include="Uploads\images\sanpham\Women\23-PLEATED-SKIRT\3.jpg" />
+    <Content Include="Uploads\images\sanpham\Women\23-RUFFED-LONG-SLEEVES\1.jpg" />
+    <Content Include="Uploads\images\sanpham\Women\23-RUFFED-LONG-SLEEVES\2.jpg" />
+    <Content Include="Uploads\images\sanpham\Women\23-RUFFED-LONG-SLEEVES\3.jpg" />
+    <Content Include="Uploads\images\sanpham\Women\23-VELVET-DRESS\1.jpg" />
+    <Content Include="Uploads\images\sanpham\Women\23-VELVET-DRESS\2.jpg" />
+    <Content Include="Uploads\images\sanpham\Women\23-VELVET-DRESS\3.jpg" />
+    <Content Include="Uploads\images\sanpham\Women\23-WAIST-COAT\1.jpg" />
+    <Content Include="Uploads\images\sanpham\Women\23-WAIST-COAT\2.jpg" />
+    <Content Include="Uploads\images\sanpham\Women\23-WAIST-COAT\3.jpg" />
+    <Content Include="Uploads\images\sanpham\Women\cocoon-trousers\1.jpg" />
+    <Content Include="Uploads\images\sanpham\Women\cocoon-trousers\2.jpg" />
+    <Content Include="Uploads\images\sanpham\Women\cocoon-trousers\3.jpg" />
+    <Content Include="Uploads\images\sanpham\Women\puff-shirt\1.jpg" />
+    <Content Include="Uploads\images\sanpham\Women\puff-shirt\2.jpg" />
+    <Content Include="Uploads\images\sanpham\Women\puff-shirt\3.jpg" />
+    <Content Include="Uploads\images\sanpham\Women\Silk-pijama-shirt\1.png" />
+    <Content Include="Uploads\images\sanpham\Women\Silk-pijama-shirt\2.png" />
+    <Content Include="Uploads\images\sanpham\Women\Silk-pijama-shirt\3.png" />
+    <Content Include="Uploads\images\sanpham\Women\Volume-Linen-skirt\1.jpg" />
+    <Content Include="Uploads\images\sanpham\Women\Volume-Linen-skirt\2.jpg" />
+    <Content Include="Uploads\images\sanpham\Women\Volume-Linen-skirt\3.jpg" />
     <Content Include="Uploads\images\setting\product_6.png" />
     <Content Include="Uploads\images\setting\ảnh đại diện.png" />
     <Content Include="Uploads\_thumbs\Images\244994762_2380031152133544_4984166604951804110_n.jpg" />
@@ -3654,6 +3762,7 @@
     <Content Include="Views\Posts\Index.cshtml" />
     <Content Include="Views\Posts\Detail.cshtml" />
     <Content Include="Views\Account\RegisterSuccess.cshtml" />
+    <Content Include="Views\Posts\Partial_Posts_Home.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -3686,6 +3795,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202305021516085_UpdateImageTbContact.resx">
       <DependentUpon>202305021516085_UpdateImageTbContact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202305051012592_UpdateTableContactAndCategory.resx">
+      <DependentUpon>202305051012592_UpdateTableContactAndCategory.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

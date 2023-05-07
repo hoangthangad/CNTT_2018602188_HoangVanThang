@@ -10,15 +10,23 @@
         {
             strImge = img.Image;
         }
-        <div class="product-item @item.ProductCategory.Alias">
-            <div class="product discount product_filter">
+        <div class="product-item @item.ProductCategory.Alias" style="height:400px">
+            <div class="product discount product_filter" style="height:360px">
                 <div class="product_image">
-                    <img src="@strImge" alt="@item.Title">
+                    <a href="/chi-tiet/@item.Alias-p@(item.Id)"><img src="@strImge" alt="@item.Title"></a>
                 </div>
                 <div class="favorite favorite_left"></div>
                 @if (item.PriceSale > 0)
                 {
                     <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>sale</span></div>
+                }
+                else if (item.IsHot)
+                {
+                    <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>hot</span></div>
+                }
+                else if (item.IsFeature)
+                {
+                    <div class="product_bubble product_bubble_left product_bubble_green d-flex flex-column align-items-center" style="width:60px"><span>Feature</span></div>
                 }
                 @* <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>-$20</span></div>*@
                 <div class="product_info">
@@ -31,10 +39,11 @@
                     else
                     {
                         <div class="product_price">@HoangVanThang2018602188.Common.Common.FormatNumber(item.Price, 0)</div>
+
                     }
                 </div>
             </div>
-            <div class="red_button add_to_cart_button"><a href="#" class="btnAddToCart" data-id="@item.Id">add to cart</a></div>
+            <div class="red_button add_to_cart_button" style="height:40px"><a href="#" class="btnAddToCart" data-id="@item.Id">add to cart</a></div>
         </div>
     }
 }

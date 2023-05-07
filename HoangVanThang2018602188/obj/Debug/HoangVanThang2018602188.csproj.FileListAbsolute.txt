@@ -238,3 +238,4 @@ E:\DATN\HoangVanThang2018602188\HoangVanThang2018602188\obj\Debug\WebBanHangOnli
 E:\DATN\HoangVanThang2018602188\HoangVanThang2018602188\obj\Debug\WebBanHangOnline.pdb
 E:\DATN\HoangVanThang2018602188\HoangVanThang2018602188\obj\Debug\HoangVanThang2018602188.Migrations.UpdateTbContact.resources
 E:\DATN\HoangVanThang2018602188\HoangVanThang2018602188\obj\Debug\HoangVanThang2018602188.Migrations.UpdateImageTbContact.resources
+E:\DATN\HoangVanThang2018602188\HoangVanThang2018602188\obj\Debug\HoangVanThang2018602188.Migrations.UpdateTableContactAndCategory.resources
