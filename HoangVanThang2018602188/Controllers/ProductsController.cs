@@ -55,7 +55,7 @@ namespace HoangVanThang2018602188.Controllers
 
         public ActionResult Partial_ItemsByCateId()
         {
-            var items = db.Products.Where(x => x.IsHome && x.IsActive).OrderByDescending(x=>x.Id).Take(10).ToList();
+            var items = db.Products.Where(x => x.IsHome && x.IsActive).ToList();
             return PartialView(items);
         }
 
