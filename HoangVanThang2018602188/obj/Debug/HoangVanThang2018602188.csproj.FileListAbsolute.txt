@@ -229,7 +229,6 @@ E:\DATN\HoangVanThang2018602188\HoangVanThang2018602188\bin\Microsoft.Owin.Secur
 E:\DATN\HoangVanThang2018602188\HoangVanThang2018602188\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 E:\DATN\HoangVanThang2018602188\HoangVanThang2018602188\bin\Microsoft.Owin.Security.OAuth.xml
 E:\DATN\HoangVanThang2018602188\HoangVanThang2018602188\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-E:\DATN\HoangVanThang2018602188\HoangVanThang2018602188\obj\Debug\HoangVanThang2018602188.csproj.AssemblyReference.cache
 E:\DATN\HoangVanThang2018602188\HoangVanThang2018602188\obj\Debug\HoangVanThang2018602188.Migrations.CreateDataabase.resources
 E:\DATN\HoangVanThang2018602188\HoangVanThang2018602188\obj\Debug\HoangVanThang2018602188.csproj.GenerateResource.cache
 E:\DATN\HoangVanThang2018602188\HoangVanThang2018602188\obj\Debug\HoangVanThang2018602188.csproj.CoreCompileInputs.cache
